@@ -1,78 +1,78 @@
-*{
+/* Styling Page  */
+* {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    
-  }
-
-/* styling row div */
-.row{
-   padding-top: 20px;
-   padding-bottom: 30px;
-   margin:auto;
-   background-color: #218380;
-   margin-bottom: 30vh;
 }
 
-/* styling row elements */
-.row p, a{
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
     font-size: 16px;
 }
 
-/* styling row sub divs */
-.left, .right {
-    float: left;
-    padding-left: 10px;
-    width: 50%;
-    align-content: center;
-    white-space: nowrap;
-    color: white;
-    padding-bottom: 15px;
+/* Styling row div */
+.row {
+    background-color: #218380;
+    padding: 10px 60px 10px 30px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:auto;
+}
 
+/* Styling row elements */
+.row p, .row p a {
+    color: white;
+}
+
+/* Styling row sub divs */
+.left, .right {
+    white-space: nowrap;
 }
 
 .left a {
     text-decoration: none;
     color: white;
 }
-.right{
-    padding-right: 30px;
-    text-align: right;
-}
 
-
-.card{
-    width: 85%;
-    height: 320px;
-    border: 2px rgb(231, 217, 217) solid ;
-    margin: 0 auto;
+.card {
+    width: 800px;
+    max-width: 90%;
+    min-height: 320px;
+    padding: 60px 60px;
+    border: 2px solid #c1c1c1;
+    margin: 100px auto;
     border-radius: 30px;
-    box-shadow: 10px 5px rgb(192, 185, 185);
-    overflow:scroll;
-    
+    box-shadow: 14px 7px 5px 0 rgba(192, 185, 185, 0.6);
 }
-.card-container{
-    margin: 8vh 3vh;
-    
+
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 0;
 }
-.btn{
+
+.card p {
+    font-weight: 500;
+}
+
+.btn {
     background-color: #218380;  
-    padding: 12px;
+    padding: 15px 12px;
     border-radius: 10px;  
     color: white;
     border: 0 #218380;
-}
-h2{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 24px;
-}
-.card p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-}
- /* width oof scroolbar in card */        
- ::-webkit-scrollbar {
-    width: 0px;
+    font-family: inherit;
+    outline: none;
+    cursor: pointer;
 }
 
+.btn:hover {
+    background-color: #2cb6b1;
+}
+
+/* Responsiveness */
+@media screen and (max-width:500px) {
+    .card {
+        padding: 40px 20px;
+    }
+}

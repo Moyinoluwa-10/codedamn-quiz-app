@@ -1,47 +1,54 @@
 // Variable for time
-var a = 50;
+let a = 50;
+var score = 0;
   
 function timer001() {
-    a = a - 1;
-    if (a < 50) {
-        document.getElementById("time001").innerHTML = a;
-    } 
 
-    if (a < 1) {
-        clearInterval(update);
-        
-    }
+  a = a - 1;
 
-    if (a == 0) {
-        location.replace("../All%20done/alldone.html"); 
-        localStorage.setItem('mostRecentScore', score.textContent);
-        // Takes you to the all done page and saves the score to local storage
-  
+  if (a < 50) {
+    document.getElementById("time001").innerHTML = a;
+  }; 
 
-    }
-}
+  if (a < 1) {
+    clearInterval(update);    
+  };
+
+  if (a == 0) {
+    location.replace("../All%20done/alldone.html"); 
+    localStorage.setItem('mostRecentScore', score);
+    // Takes you to the all done page and saves the score to local storage
+  };
+};
+
 
 update = setInterval("timer001()", 1000);
+
 //Function for incorrect answer
 function deductTime() {
-    a = a - 10; 
-    
-    if (a < 1) {
-        clearInterval(update);
-        
-    }
+  a = a - 10; 
+  
+  if (a < 1) {
+    clearInterval(update);      
+  };
 
-    if (a < 1) {
-        location.replace("../All%20done/alldone.html");
-        localStorage.setItem('mostRecentScore', score.textContent);
-    }
+  if (a < 1) {
+    location.replace("../All%20done/alldone.html");
+    localStorage.setItem('mostRecentScore', score);
+  };
 
-}
+};
+
 
 const questions = [
   {
     questionText: "Commonly used data types DO NOT include:",
-    options: ["1. strings", "2. booleans", "3. alerts", "4. numbers"],
+    options: [
+      "1. strings", 
+      "2. booleans", 
+      "3. alerts", 
+      "4. numbers"
+    ],
     answer: "3. alerts",
   },
   {
@@ -74,10 +81,16 @@ const questions = [
   {
     questionText:
       "Which of the following is a statement that can be used to terminate a loop, switch or label statement?",
-    options: ["1. break", "2. stop", "3. halt", "4. exit"],
+    options: [
+      "1. break", 
+      "2. stop", 
+      "3. halt", 
+      "4. exit"
+    ],
     answer: "1. break",
   },
 ];
+
 
 let que_count = 0;
 const next_btn = document.getElementById("next_btn");
@@ -90,15 +103,16 @@ next_btn.onclick = () => {
     document.getElementById("correctBox").style.display = "none";
   } else {
     location.replace("../All%20done/alldone.html");
-    localStorage.setItem('mostRecentScore', score.textContent);
-  }
-}
+    localStorage.setItem('mostRecentScore', score);
+  };
+};
+
 
 //Getting questions and options from array above
 function showQuestion(index){
+  
   const que_text = document.querySelector(".que_text");
   const option_list = document.querySelector(".option_list");
-  
 
   let que_tag = '<h2>' + questions[index].questionText + '</h2>';
   let option_tag = '<p class="option">' + questions[index].options[0] + '</p>'
@@ -110,29 +124,26 @@ function showQuestion(index){
   option_list.innerHTML = option_tag;
  
   const option = option_list.querySelectorAll(".option");
-  for (i = 0; i < option.length; i++){
+  for (i = 0; i < option.length; i++) {
     option[i].setAttribute("onClick", "optionSelected(this)");
-    
-  }
-}
+  };
+};
 
 
-function optionSelected(answer){
+// Checking if answer is correct or incorrect
+function optionSelected(answer) {
   let userAns = answer.textContent;
   let correctAns = questions[que_count].answer;
-  const score = document.getElementById("score");
   
-  if (userAns == correctAns){
-   document.getElementById("correctBox").style.display = "block";
-   score.textContent++
-   
-  }  else {
+  if (userAns == correctAns ){
+    document.getElementById("correctBox").innerHTML = "Correct!";
+    document.getElementById("correctBox").style.display = "block";
+    answer.style.backgroundColor = "green";
+    score = score + 10;
+  } else {
     document.getElementById("correctBox").innerHTML = "Incorrect!";
     document.getElementById("correctBox").style.display = "block";
+    answer.style.backgroundColor = "red";
     deductTime();
-  }
-}
-
-
-
-
+  };
+};

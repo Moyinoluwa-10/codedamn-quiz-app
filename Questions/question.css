@@ -1,0 +1,115 @@
+/* Styling Page */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+}
+
+.heading_container {
+    background-color: #218380;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #218380;
+    padding: 10px 60px 10px 30px; 
+}
+
+#leaderboard {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+    width: 850px;
+    max-width: 90%;
+    min-height: 370px;
+    border-radius: 30px;
+    border: 2px solid #c1c1c1;
+    box-shadow: 14px 7px 5px 0 rgba(192, 185, 185, 0.6);
+    margin: 70px auto;
+    padding: 50px 60px 45px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.que_text {
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 30px;
+    width: 100%;
+    font-size: 18px;
+}
+
+.option_list p {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #218380;
+    color: #fff;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    height: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15px;
+    width: 100%;
+    max-width: 100%;
+    font-size: inherit;
+    font-weight: 500;
+}
+
+.option_list p:hover {
+    background-color: #2cb6b1;
+}
+
+#footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#footer #correctBox {
+    display: none;
+    color: #000;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin-right: auto;
+}
+
+#footer button {
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    color: #fff;
+    background-color: #218380;
+    cursor: pointer;
+    outline: none;
+    padding: 15px 12px;
+    font-family: inherit;
+    margin-left: auto;
+}
+
+#footer button:hover {
+    background-color: #2cb6b1;
+}
+
+@media screen and (max-width: 550px) {
+
+    .container {
+        padding: 30px 20px 35px 20px;       
+    }
+
+    .que_text {
+        font-size: 15px;
+    }
+    
+}
