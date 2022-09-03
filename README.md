@@ -15,7 +15,7 @@ You can read about our experience [here](https://kamet.hashnode.dev/quiz-app)
 
 ## :page_facing_up: Table of contents
 
-* [:zap: Barter Clone](#zap-barter-clone)
+* [:zap: Quiz App](#zap-quiz-app)
 	* [:camera: Screenshots](#camera-screenshots)
 	* [:signal_strength: Technologies](#signal_strength-technologies)
     * [:cool: Live-Solution](#cool-live-solution)
