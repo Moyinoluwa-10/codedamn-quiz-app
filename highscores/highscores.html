@@ -1,38 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Favicon -->
-    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon.png"
+      type="image/x-icon"
+    />
     <!-- Link to CSS File -->
-    <link rel="stylesheet" href="highscores.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="highscores.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      type="text/css"
+    />
     <title>Codedamn - Quiz Project</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="heading_container">
-        <div>
-            <p><a href="../highscores/highscores.html" id=leaderboard>View Highscores <i class="fas fa-hand-point-left fa-lg"></i></a></p>
-        </div>
-        <div><p>Time:</p></div>
+      <div>
+        <p>
+          <a href="../highscores/highscores.html" id="leaderboard"
+            >View Highscores <i class="fas fa-hand-point-left fa-lg"></i
+          ></a>
+        </p>
+      </div>
+      <div><p>Time:</p></div>
     </div>
-    
-    <main>
-        <section class="one">
-            <h2>Highscores</h2>
-            <ol id="highscores-list"></ol>
 
-            <div class="buttonBox">
-                <a href="../index.html"><button>Go back</button></a>
-                <button onclick="clearHighscores()">Clear Highscore</button>
-            </div>
-        </section>
+    <main>
+      <section class="one">
+        <h2>Highscores</h2>
+        <ol id="highscores-list"></ol>
+
+        <div class="buttonBox">
+          <a href="../index.html"><button>Go back</button></a>
+          <button onclick="clearHighscores()">Clear Highscore</button>
+        </div>
+      </section>
     </main>
 
     <script src="highscores.js"></script>
-
-</body>
+  </body>
 </html>

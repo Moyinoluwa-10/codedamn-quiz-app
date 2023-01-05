@@ -1,57 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Favicon -->
-    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon.png"
+      type="image/x-icon"
+    />
     <!-- Link to CSS File -->
-    <link rel="stylesheet" href="question.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="question.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      type="text/css"
+    />
     <title>Codedamn - Quiz Project</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <main>
-        <div class="main-container">
-
-            <div class="heading_container">
-                <div class="left">
-                    <p><a href="../highscores/highscores.html" id=leaderboard>View Highscores <i class="fas fa-hand-point-left fa-lg"></i></a></p>
-                </div>
-                <div><p>Time: <span id="time001"></span></p></div>
-            </div>
-
-            <div class="container">
-
-                <div class="quiz_box">
-
-                    <div class="que_text">
-                        <h2>Commonly used data types DO NOT include:</h2>
-                    </div>
-
-                    <div class="option_list">
-                        <p class="option" onclick="optionSelected(this)">1. strings</p>
-                        <p class="option" onclick="optionSelected(this)">2. booleans</p>
-                        <p class="option" onclick="optionSelected(this)">3. alerts</p>
-                        <p class="option" onclick="optionSelected(this)">4. numbers</p>
-                    </div>
-
-                    <div id="footer">
-                        <div id="correctBox"></div>
-                        <div id="buttonBox"><button id="next_btn">Next question</button></div>    
-                    </div>
-
-                </div>
-
-            </div>
-
+      <div class="main-container">
+        <div class="heading_container">
+          <div class="left">
+            <p>
+              <a href="../highscores/highscores.html" id="leaderboard"
+                >View Highscores <i class="fas fa-hand-point-left fa-lg"></i
+              ></a>
+            </p>
+          </div>
+          <div>
+            <p>Time: <span id="time001"></span></p>
+          </div>
         </div>
+
+        <div class="container">
+          <div class="quiz_box">
+            <div class="que_text"></div>
+
+            <div class="option_list"></div>
+
+            <div id="footer">
+              <div id="correctBox"></div>
+              <div id="buttonBox">
+                <button id="next_btn">Next question</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
-
-    <script src="Questions.js"></script>
-
-</body>
+    <script src="questions.js"></script>
+  </body>
 </html>

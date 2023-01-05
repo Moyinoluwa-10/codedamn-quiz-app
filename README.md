@@ -15,12 +15,14 @@ You can read about our experience [here](https://kamet.hashnode.dev/quiz-app)
 
 ## :page_facing_up: Table of contents
 
-* [:zap: Quiz App](#zap-quiz-app)
-	* [:camera: Screenshots](#camera-screenshots)
-	* [:signal_strength: Technologies](#signal_strength-technologies)
-    * [:cool: Live-Solution](#cool-live-solution)
-	* [:envelope: Contact](#envelope-contact)
-    * [:pen: Contributors](#pen-contributors)
+- [Codedamn Projects - Quiz App](#codedamn-projects---quiz-app)
+	- [Hello developer!](#hello-developer)
+	- [:page\_facing\_up: Table of contents](#page_facing_up-table-of-contents)
+	- [:camera: Screenshots](#camera-screenshots)
+	- [:signal\_strength: Technologies](#signal_strength-technologies)
+	- [:cool: Live-Solution](#cool-live-solution)
+	- [:envelope: Contact](#envelope-contact)
+	- [:pen: Contributors](#pen-contributors)
 
 ## :camera: Screenshots
 
@@ -42,7 +44,7 @@ You can read about our experience [here](https://kamet.hashnode.dev/quiz-app)
 
 ## :cool: Live-Solution
 
-* Here is the [Link](https://quiz-app-204.netlify.app/) to the live solution of the clone.
+* Here is the [link](https://quiz-app-204.netlify.app/) to the quiz app.
 
 ## :envelope: Contact
 
